@@ -26,19 +26,17 @@ public class BinaryTree  {
     }
 
     public void display() {
-        //display(root);
+        display(root);
     }
 
-//    private void display(Node root) {
-//        if (root != null) {
-//            display(root.left);
-//            System.out.println(root.data);
-//            display(root.right);
-//        }
-//    }
-//
+    private void display(Node root) {
+        if (root != null) {
+            display(root.left);
+            System.out.println(root.data);
+            display(root.right);
+        }
+    }
 //                  Search
-
     public Node search(int data) {
 
         return search(root, data);
